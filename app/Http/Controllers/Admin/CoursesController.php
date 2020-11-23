@@ -33,6 +33,8 @@ class CoursesController extends Controller
 
     }
 
+    
+
 
     public function store_courses(Request $request){
         $Courses = new Courses();

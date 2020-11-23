@@ -28,4 +28,13 @@ class HomeController extends Controller
 
         return view('UI.book_demo');
     }
+
+
+    public function course_details($id){
+        // $Teachers = Authendication::where('user_type', 2)->get();
+
+        $Courses = Courses::where('id', $id)->first();
+        return view('UI.course_details', compact('Courses'));
+
+    }
 }

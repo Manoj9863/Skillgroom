@@ -40,7 +40,7 @@ class AdminController extends Controller
     public function classes(){
 
         if(Auth::guard('super_admin')->check()){
-            $Classes = Classes::orderBy('created_at', 'DESC')->paginate(30);
+            $Classes = Classes::orderBy('created_at', 'DESC')->get();
         }elseif(Auth::guard('teacher')->check()){
             $id = Session::get('TeacherId');
 

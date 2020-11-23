@@ -50,7 +50,7 @@
                                 </tbody>
                             </table>
 
-                            {{ $Classes->links() }}
+                            {{-- {{ $Classes->links() }} --}}
                         </div>
                     </div>
                 </div>

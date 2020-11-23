@@ -315,6 +315,7 @@
 
         <div class="row">
           @foreach($Courses as $Course)
+          <a href="course_details/{{$Course->id}}" target="_blank">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <img src="/Admin/featured_image/{{$Course->featured_image}}" class="img-fluid" alt="">
@@ -331,6 +332,7 @@
               </div>
             </div>
           </div>
+          </a>
           @endforeach
         </div>
 

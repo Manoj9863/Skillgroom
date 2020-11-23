@@ -23,6 +23,8 @@ Route::get('/partners', 'UI\HomeController@partners');
 
 Route::get('/book_demo', 'UI\HomeController@book_demo');
 
+Route::get('/course_details/{id}', 'UI\HomeController@course_details');
+
 
 
 
